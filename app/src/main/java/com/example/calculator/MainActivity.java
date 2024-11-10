@@ -60,4 +60,31 @@ public class MainActivity extends AppCompatActivity {
         isNewOp = true;
     }
 
+    private void calculateResult() {
+        secondValue = Double.parseDouble(txtDisplay.getText().toString());
+        double result = 0;
+        switch (operator) {
+            case "+":
+                result = firstValue + secondValue;
+                break;
+            case "-":
+                result = firstValue - secondValue;
+                break;
+            case "*":
+                result = firstValue * secondValue;
+                break;
+            case "/":
+                if (secondValue != 0) {
+                    result = firstValue / secondValue;
+                } else {
+                    txtDisplay.setText("Error");
+                    isNewOp = true;
+                    return;
+                }
+                break;
+        }
+        txtDisplay.setText(String.valueOf(result));
+        isNewOp = true;
+    }
+
 }
