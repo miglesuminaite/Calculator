@@ -54,4 +54,10 @@ public class MainActivity extends AppCompatActivity {
         isNewOp = true;
     }
 
+    private void sqrtClick() {
+        firstValue = Double.parseDouble(txtDisplay.getText().toString());
+        txtDisplay.setText(String.valueOf(Math.sqrt(firstValue)));
+        isNewOp = true;
+    }
+
 }
