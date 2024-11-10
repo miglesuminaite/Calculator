@@ -87,4 +87,9 @@ public class MainActivity extends AppCompatActivity {
         isNewOp = true;
     }
 
+    private void clearDisplay() {
+        txtDisplay.setText("0");
+        isNewOp = true;
+    }
+
 }
