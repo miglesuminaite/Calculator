@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="end"
         android:textSize="36sp"
-        android:text="0"
+        android:text="@string/TxtViewText"
         android:padding="16dp"
         android:background="#ECECEC"/>
 
