@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         isNewOp = true;
     }
 
+
     private void deleteLast() {
         String currentText = txtDisplay.getText().toString();
         if (currentText.length() > 1) {
@@ -99,6 +100,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             txtDisplay.setText("0");
         }
+    }
+
+    private void changeSign() {
+        double value = Double.parseDouble(txtDisplay.getText().toString());
+        value = -value;
+        txtDisplay.setText(String.valueOf(value));
     }
 
 }
