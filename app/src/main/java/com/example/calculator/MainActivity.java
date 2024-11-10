@@ -36,5 +36,17 @@ public class MainActivity extends AppCompatActivity {
         for (int id : numberButtonIds) findViewById(id).setOnClickListener(listener);
     }
 
+    private void setOperationButtonListeners() {
+        findViewById(R.id.btnAdd).setOnClickListener(v -> operationClick("+"));
+        findViewById(R.id.btnSubtract).setOnClickListener(v -> operationClick("-"));
+        findViewById(R.id.btnMultiply).setOnClickListener(v -> operationClick("*"));
+        findViewById(R.id.btnDivide).setOnClickListener(v -> operationClick("/"));
+        findViewById(R.id.btnSqrt).setOnClickListener(v -> sqrtClick());
+        findViewById(R.id.btnEquals).setOnClickListener(v -> calculateResult());
+        findViewById(R.id.btnClear).setOnClickListener(v -> clearDisplay());
+        findViewById(R.id.btnDelete).setOnClickListener(v -> deleteLast());
+        findViewById(R.id.btnSignChange).setOnClickListener(v -> changeSign());
+    }
+
 
 }
