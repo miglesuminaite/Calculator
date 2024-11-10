@@ -92,4 +92,13 @@ public class MainActivity extends AppCompatActivity {
         isNewOp = true;
     }
 
+    private void deleteLast() {
+        String currentText = txtDisplay.getText().toString();
+        if (currentText.length() > 1) {
+            txtDisplay.setText(currentText.substring(0, currentText.length() - 1));
+        } else {
+            txtDisplay.setText("0");
+        }
+    }
+
 }
