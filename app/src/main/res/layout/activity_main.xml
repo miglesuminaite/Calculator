@@ -23,5 +23,35 @@
         android:columnCount="4"
         android:padding="16dp">
 
+        <!-- Row 1: Clear, Delete, Sign Change, Divide -->
+        <Button android:id="@+id/btnClear" android:text="@string/clear" />
+        <Button android:id="@+id/btnDelete" android:text="@string/delete" />
+        <Button android:id="@+id/btnSignChange" android:text="@string/sign_change" />
+        <Button android:id="@+id/btnDivide" android:text="@string/divide" />
+
+        <!-- Row 2: 7, 8, 9, Multiply -->
+        <Button android:id="@+id/btn7" android:text="@string/seven" />
+        <Button android:id="@+id/btn8" android:text="@string/eight" />
+        <Button android:id="@+id/btn9" android:text="@string/nine" />
+        <Button android:id="@+id/btnMultiply" android:text="@string/multiply" />
+
+        <!-- Row 3: 4, 5, 6, Subtract -->
+        <Button android:id="@+id/btn4" android:text="@string/four" />
+        <Button android:id="@+id/btn5" android:text="@string/five" />
+        <Button android:id="@+id/btn6" android:text="@string/six" />
+        <Button android:id="@+id/btnSubtract" android:text="@string/subtract" />
+
+        <!-- Row 4: 1, 2, 3, Add -->
+        <Button android:id="@+id/btn1" android:text="@string/one" />
+        <Button android:id="@+id/btn2" android:text="@string/two" />
+        <Button android:id="@+id/btn3" android:text="@string/three" />
+        <Button android:id="@+id/btnAdd" android:text="@string/add" />
+
+        <!-- Row 5: 0, Decimal, Square Root, Equals -->
+        <Button android:id="@+id/btn0" android:text="@string/zero" />
+        <Button android:id="@+id/btnDecimal" android:text="@string/decimal" />
+        <Button android:id="@+id/btnSqrt" android:text="@string/sqrt" />
+        <Button android:id="@+id/btnEquals" android:text="@string/equals" />
+
     </GridLayout>
 </LinearLayout>
