@@ -48,5 +48,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnSignChange).setOnClickListener(v -> changeSign());
     }
 
+    private void operationClick(String op) {
+        firstValue = Double.parseDouble(txtDisplay.getText().toString());
+        operator = op;
+        isNewOp = true;
+    }
 
 }
